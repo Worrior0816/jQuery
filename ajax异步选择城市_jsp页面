@@ -28,9 +28,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				if(country != undefined && country != null){
 					//根据国家获取该国的城市列表 并设置到城市下拉框中
 					$.ajax({
-						url:"${pageContext.request.contextPath}/cityServlet?sendType=get&dataType=" + type,
+						url:"${pageContext.request.contextPath}/cityServlet?sendType=post&dataType=" + type,
 						data:{"country":country},
-						type:"get",
+						type:"post",
 						dataType:type,
 						success:function(data){
 							if("json" == type){
