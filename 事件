@@ -120,3 +120,4 @@
     <input type="button" id="btn8" value="事件冒泡，点击span后div也被触发点击">
   </body>
 </html>
+
