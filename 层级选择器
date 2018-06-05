@@ -51,18 +51,21 @@
     
     	$(document).ready(function(){
     		$("#btn1").click(function(){
+		         //在给定的祖先元素下匹配所有的后代元素
     			$("#div2 span").addClass("cBlack");
     		});
     		$("#btn2").click(function(){
+		        //在给定的父元素下匹配所有的子元素
     			$("#div2 > span").addClass("cBlack");
     		});
     		$("#btn3").click(function(){
+		        //匹配所有紧接在后的元素
     			$("#div2 + div").addClass("cBlack");
     		});
     		$("#btn4").click(function(){
     			$("#div2 ~ div").addClass("cBlack");
     		});
-    		$("#btn5").click(function(){
+    		$("#btn5").click(function(){	
     			$("#div2").siblings("div").addClass("cBlack");
     		});
     	});
