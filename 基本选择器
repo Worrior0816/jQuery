@@ -44,18 +44,23 @@
     
     	$(document).ready(function(){
     		$("#btn1").click(function(){
+		        //根据给定的ID匹配一个元素
     			$("#div1").addClass("cBlack");
     		});
     		$("#btn2").click(function(){
+		       //根据给定的元素名匹配所有元素
     			$("div").addClass("cBlack");
     		});
     		$("#btn3").click(function(){
+		        //根据给定的类匹配元素
     			$(".subDivCls").addClass("cBlack");
     		});
     		$("#btn4").click(function(){
+		        //匹配所有元素
     			$('*').addClass("cBlack");
     		});
     		$("#btn5").click(function(){
+		         //将每一个选择器匹配的元素合并后一起返回
     			$(".subDivCls,span,#div1").addClass("cBlack");
     		});
     	});
